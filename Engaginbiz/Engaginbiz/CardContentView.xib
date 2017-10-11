@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" id="iN0-l3-epB" customClass="CardView" customModule="Engaginbiz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f65-xw-TtY" customClass="UIButtonX" customModule="Engaginbiz" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <state key="normal" backgroundImage="Bhavin Agarwal"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="openDetailViewController:" destination="iN0-l3-epB" eventType="touchUpInside" id="FrA-Wx-hQu"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" image="badge_industry" translatesAutoresizingMaskIntoConstraints="NO" id="uSE-e2-ckf">
+                    <rect key="frame" x="89" y="560" width="270" height="87"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f65-xw-TtY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="01V-rK-lhy"/>
+                <constraint firstItem="f65-xw-TtY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MOO-Li-fLy"/>
+                <constraint firstAttribute="trailing" secondItem="f65-xw-TtY" secondAttribute="trailing" id="SdL-qh-932"/>
+                <constraint firstItem="uSE-e2-ckf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="560" id="f7l-JN-pJZ"/>
+                <constraint firstAttribute="bottom" secondItem="f65-xw-TtY" secondAttribute="bottom" id="m2y-yJ-rdU"/>
+                <constraint firstAttribute="trailing" secondItem="uSE-e2-ckf" secondAttribute="trailing" constant="16" id="pn1-Uu-wJz"/>
+                <constraint firstAttribute="bottom" secondItem="uSE-e2-ckf" secondAttribute="bottom" constant="20" id="qRl-Ua-tys"/>
+                <constraint firstItem="uSE-e2-ckf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="89" id="vUl-2k-UFh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="profileButton" destination="f65-xw-TtY" id="FmK-kY-Pij"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bhavin Agarwal" width="638" height="960"/>
+        <image name="badge_industry" width="270" height="270"/>
+    </resources>
+</document>
